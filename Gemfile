@@ -66,11 +66,25 @@ gem 'jquery-rails'
 
 gem 'popper_js', '~> 1.11.1'
 gem 'bootstrap', '4.0.0.alpha6'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>=1.3.3'
+end
+
+## Gemfile for Rails 3+, Sinatra, and Merb
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap' 
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'devise'
-gem "geocoder"
-gem "figaro"
+
+## Adding Google Maps integration via geocoder
+gem 'geocoder'
+gem 'figaro'
+
+## IMAGE UPLOADER
+gem 'carrierwave', '~> 2.0'
+gem 'fog-aws'
 
 
 

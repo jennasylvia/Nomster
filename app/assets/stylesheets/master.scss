@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
 @import "font-awesome";
 
 .booyah-box {
@@ -14,41 +15,91 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-image: image_url('grey.png');
+  background: image_url('funky-lines.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
-.navbar .navbar-inverse {
-  background-image: image_url('christmas-dark.png');
+.navbar {
+  background: image_url('dark-triangles.png');
   box-shadow: 0px 1px 3px #2a2a2a;
   margin-bottom: 0;
 }
 
-.navbar-inverse .navbar-brand{
-  color: #E3E85A;
-  font-family: 'quicksanddash', sans-serif;
-  font-size:26px;
+.navbar-dark .navbar-brand {
+  color: #6CABDD;
+  font-family: 'chunkfiveregular';
+  font-size: 26px;
 }
+
+/* digg style pagination */
+.digg_pagination {  
+  background: none;
+  cursor: default;
+  margin-top: 10px;
+  /* self-clearing method: */ }
+  .digg_pagination a, .digg_pagination span, .digg_pagination em {
+    padding: 0.2em 0.5em;
+    display: block;
+    float: left;
+    margin-right: 1px; }
+  .digg_pagination .disabled {
+    color: #999999;
+    background: white;
+    border: 1px solid #dddddd; }
+  .digg_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    background: #2e6ab1;
+    color: white;
+    border: 1px solid #2e6ab1; }
+  .digg_pagination a {
+    text-decoration: none;
+    color: #105cb6;
+    border: 1px solid #9aafe5;
+    background: white; }
+    .digg_pagination a:hover, .digg_pagination a:focus {
+      color: #000033;
+      border-color: #000033; }
+  .digg_pagination .page_info {
+    background: #2e6ab1;
+    color: white;
+    padding: 0.4em 0.6em;
+    width: 22em;
+    margin-bottom: 0.3em;
+    text-align: center; }
+    .digg_pagination .page_info b {
+      color: #000033;
+      background: #6aa6ed;
+      padding: 0.1em 0.25em; }
+  .digg_pagination:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  * html .digg_pagination {
+    height: 1%; }
+  *:first-child + html .digg_pagination {
+    overflow: hidden; }
 
 .invalid-feedback {
   color: #ff3333;
   background-color: #FFEEEE;
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
-}git push heroku master
-
+}
 
 #map {
   height: 300px;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 blockquote {
@@ -72,34 +123,16 @@ blockquote p {
   display: inline;
 }
 
-
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
   max-height: 550px;
   width: 100%;
 }
 
-.carousel-caption {
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 60px;
-  font-weight: 100;
-  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  position: absolute;
-  left: 0;
+.carousel-item.active, 
+.carousel-item-next, 
+.carousel-item-prev {
+  display: block;
 }
-
-
-.carousel {
-  box-shadow: 0px 3px 8px #2a2a2a;
-}
-
-
-.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  max-height: 550px;
-  width: 100%;
-}
-
 
 .carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
